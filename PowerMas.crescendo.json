@@ -1,0 +1,112 @@
+{
+  "$schema": "https://aka.ms/PowerShell/Crescendo/Schemas/2021-11",
+  "Commands": [
+    {
+      "Verb": "Get",
+      "Noun": "MasAppList",
+      "OriginalName": "/usr/local/Cellar/mas/1.8.6/bin/mas",
+      "OriginalCommandElements": [
+        "list"
+      ],
+      "Platform": [
+        "MacOS"
+      ],
+      "Elevation": null,
+      "Aliases": null,
+      "DefaultParameterSetName": null,
+      "SupportsShouldProcess": false,
+      "ConfirmImpact": null,
+      "SupportsTransactions": false,
+      "NoInvocation": false,
+      "Description": "List installed apps via App Store",
+      "Usage": {
+        "Synopsis": "List installed apps via App Store",
+        "SupportsFlags": false,
+        "HasOptions": false,
+        "OriginalText": null
+      },
+      "Parameters": [],
+      "Examples": [
+        {
+          "Command": "Get-MasAppList",
+          "OriginalCommand": "mas list",
+          "Description": "Get the list of installed apps."
+        }
+      ],
+      "OriginalText": "Lists apps from the Mac App Store which are currently installed",
+      "HelpLinks": null,
+      "OutputHandlers": [
+        {
+          "ParameterSetName": "Default",
+          "Handler": "ParseAppList",
+          "HandlerType": "Function",
+          "StreamOutput": false
+        }
+      ]
+    },
+    {
+      "Verb": "Get",
+      "Noun": "MasVersion",
+      "OriginalName": "/usr/local/Cellar/mas/1.8.6/bin/mas",
+      "OriginalCommandElements": [
+        "version"
+      ],
+      "Platform": [
+        "MacOS"
+      ],
+      "Elevation": null,
+      "Aliases": null,
+      "DefaultParameterSetName": null,
+      "SupportsShouldProcess": false,
+      "ConfirmImpact": null,
+      "SupportsTransactions": false,
+      "NoInvocation": false,
+      "Description": "Print version number",
+      "Usage": {
+        "Synopsis": "Print version number",
+        "SupportsFlags": false,
+        "HasOptions": false,
+        "OriginalText": null
+      },
+      "Parameters": [
+        {
+          "Name": "String",
+          "OriginalName": "--string",
+          "OriginalText": null,
+          "Description": null,
+          "DefaultValue": null,
+          "DefaultMissingValue": null,
+          "ApplyToExecutable": false,
+          "ParameterType": "object",
+          "AdditionalParameterAttributes": null,
+          "Mandatory": false,
+          "ParameterSetName": null,
+          "Aliases": null,
+          "Position": 2147483647,
+          "OriginalPosition": 0,
+          "ValueFromPipeline": false,
+          "ValueFromPipelineByPropertyName": false,
+          "ValueFromRemainingArguments": false,
+          "NoGap": false
+        }
+      ],
+      "Examples": [
+        {
+          "Command": "Get-MasVersion",
+          "OriginalCommand": "mas version",
+          "Description": "Gets the installed version of mas"
+        }
+      ],
+      "OriginalText": "Print version number",
+      "HelpLinks": null,
+      "OutputHandlers": [
+        {
+          "ParameterSetName": "Default",
+          "Handler": "ParseMasVersion",
+          "HandlerType": "Function",
+          "StreamOutput": false
+        }
+      ]
+    }
+  ]
+}
